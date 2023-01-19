@@ -35,7 +35,7 @@ body {
     color: var(--white-color);
 }
 
-#site-title h2, #site-title{
+#site-title h2{
     color: var(--yellow-color);
     margin-bottom: 1em;
 }
@@ -46,15 +46,13 @@ body {
     color: var(--yellow-color);
 }
 
-
-
-
 #site-title .description {
     font-size: 2em;
     text-transform: uppercase;
     max-width: 350px;
     font-weight: bold;
     margin-bottom: 1em;
+    color: var(--yellow-color);
   }
 
 #site-title p{
@@ -67,6 +65,9 @@ body {
     background-color: var(--blue-color);
     padding: 2em;
     max-width: 22%;
+    border-color: var(--white-color);
+    border-width: 5px;
+    border-style: solid;
 }
 
 #login-form p{
@@ -94,6 +95,13 @@ body {
     outline: none;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: Tomorrow, sans-serif;
+ }
+
 .btn{
     background-color: var(--yellow-color);
     color: var(--black-color);
@@ -107,11 +115,58 @@ body {
 
 .btn:hover{
     opacity: 1;
+    background-color: var(--white-color);
 }
 
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: Tomorrow, sans-serif;
- }
+/*Parallax*/
+#experience h2 {
+    background-image: url("./img/Cyberpunk_foto6.png");
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+    color: var(--yellow-color);
+}
+
+/*Exemplos*/
+.examples {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.example {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--black-color);
+}
+  
+.example .example-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+  
+#example-1 {
+    background-image: url("./img/Cyberpunk_2077_exemplo_2.jpg");
+}
+
+#example-2 {
+    background-image: url("./img/Cyberpunk_2077_exemplo_4.png");
+}
+
+#example-3 {
+    background-image: url("./img/Cyberpunk_2077_exemplo_3.png");
+}
