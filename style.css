@@ -1,12 +1,112 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
 
-* {
+:root{
+    --yellow-color: #fcee09; 
+    --red-color: #ff003c;
+    --black-color: #050a0e;
+    --blue-color: #00f0ff;
+    --white-color: #fafafa;
+}
+
+/*Resetar css*/
+*{
+    font-family: Tomorrow, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-  
+
+/*Estilizando o body*/
 body {
+    background-color: var(--yellow-color);
     margin: 0px;
     font-family: Tomorrow, sans-serif;
+}
+
+/*Estlizado o header*/
+#site-description{
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url("./img/Cyberpunk_foto1.jpg");/*Deixa a imagem mais escura*/
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white-color);
+}
+
+#site-title h2, #site-title{
+    color: var(--yellow-color);
+    margin-bottom: 1em;
+}
+
+#site-title h2 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: var(--yellow-color);
+}
+
+
+
+
+#site-title .description {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+#site-title p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+
+#login-form{
+    background-color: var(--blue-color);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#login-form p{
+    font-size: 1.5em;
+    color: var(--black-color);
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--black-color);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select{
+    padding: 6px 8px;
+    border-radius: none;
+    outline: none;
+}
+
+.btn{
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0,8;
+}
+
+.btn:hover{
+    opacity: 1;
 }
 
 select {
