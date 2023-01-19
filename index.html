@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imobiliária</title>
+    <title>Baltic Real State</title>
+    <link rel="icon" type="image/x-icon" href="./img/Cyberpunk_2077_favicon.png">
     <link rel="stylesheet" href="./style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,12 +13,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <div>
-        
+    <header id="site-description">
+        <div id="title">
+            <h2>Baltic Real State</h2>
+            <p id="description">
+                Invista em um imóvel de seus sonhos.
+            </p>
         </div>
 
-        <div>
+        <div id="login-form">
+            <p>Preencha os campos do formulário para criar uma conta no nosso site !</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email...">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="phone" placeholder="Número do Whatsapp">
+                </div>
+                <div class="form-group">
+                    <label for="location">Local onde deseja morar:</label>
+                    <select name="location">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="apartment">Northside Industrial District</option>
+                        <option value="house">North Oaks</option>
+                        <option value="garden">Downtown</option>
+                        <option value="other">Vista Del Rey</option>
+                        <option value="other">Well Springs</option>
+                        <option value="other">Kabuki</option>
+                    </select>
+                </div>
+            </form>
 
         </div>
     </header>
