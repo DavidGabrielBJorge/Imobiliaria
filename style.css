@@ -170,3 +170,48 @@ select {
 #example-3 {
     background-image: url("./img/Cyberpunk_2077_exemplo_3.png");
 }
+
+/*Local do escritório*/
+#local {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/nc_map2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--yellow-color);
+    margin-bottom: 3em;
+}
+
+
+#address,
+#about-location {
+  max-width: 25%;
+}
+
+#address {
+  display: flex;
+}
+
+#address i {
+  color: var(--blue-color);
+  font-size: 5em;
+  margin-right: 0.5em;
+}
+
+#details-local {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#about-local h3 {
+  color: var(--blue-color);
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+#about-local p {
+  line-height: 0.5em;
+}
