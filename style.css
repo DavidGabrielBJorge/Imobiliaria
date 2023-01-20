@@ -267,3 +267,20 @@ select {
 .description-apartment ul li:last-child {
     font-weight: bold;
 }
+
+/* Footer */
+#footer {
+    text-align: center;
+    color: var(--black-color);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blue-color);
+}
+
+  #footer p{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+  
