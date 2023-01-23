@@ -279,9 +279,13 @@ select {
     background-color: var(--blue-color);
 }
 
-  #footer p{
+#footer p{
     margin-bottom: 1em;
     font-size: 1.2em;
+}
+
+#footer p:first-child{
+    font-weight: bold;
 }
 
 /*Secao da inspiracao*/
@@ -311,7 +315,7 @@ select {
 }
 
 /*Estilizacao para celulares*/
-@media (max-width: 450px) {
+@media (max-width: 1300px) {
    /*Descricao e formulario*/
     #site-description {
       flex-direction: column;
@@ -329,5 +333,87 @@ select {
     #login-form {
       max-width: 70%;
       margin-bottom: 2em;
+    }
+    
+    /*Exemplos de apartamentos*/
+    .examples {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+    
+    .example {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Local do escritorio */
+    #local {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    #address i {
+        margin: 0.3em 0;
+    }
+    
+    #about-local {
+        order: 1;
+        max-width: 100%;
+    }
+    
+    #about-local h3 {
+        margin-bottom: 0;
+    }
+    
+    #about-local p {
+        display: none;
+    }
+      
+    /*Imagens e descricoes dos apartamentos */
+    .apartment {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
+
+    .apartment img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #main-apartment img {
+        display: none;
+    }
+
+    .description-apartment {
+        padding: 0;
+    }
+
+    #apartment-3 img {
+        order: 2;
+    }
+
+    #apartment-3 .description-apartment {
+        order: 1;
+    }
+
+    /*Botao*/
+    #inspiration .btn {
+        width: 60%;
+        margin-bottom: 0.5em;
+    }
+
+    /*Footer*/
+    #footer p{
+        font-size: 1.5em;
     }
 }
