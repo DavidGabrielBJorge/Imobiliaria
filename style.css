@@ -121,7 +121,7 @@ select {
 /*Parallax*/
 #experience h2 {
     background-image: url("./img/Cyberpunk_foto6.png");
-    min-height: 200px; 
+    min-height: 30%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,17 +295,39 @@ select {
     justify-content: center;
     text-align: center;
     color: var(--white-color);
-  }
+}
   
   #inspiration h2 {
     margin-bottom: 1em;
     font-size: 2em;
     font-weight: 500;
-  }
-  
+}
+
   #inspiration .btn {
     width: 30%;
     margin: 0 auto;
     font-weight: 500;
     font-size: 1.5em;
-  }
+}
+
+/*Estilizacao para celulares*/
+@media (max-width: 450px) {
+   /*Descricao e formulario*/
+    #site-description {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    #site-title {
+      padding: 2em;
+    }
+  
+    #site-title h2 {
+      margin-bottom: 0.5em;
+    }
+  
+    #login-form {
+      max-width: 70%;
+      margin-bottom: 2em;
+    }
+}
