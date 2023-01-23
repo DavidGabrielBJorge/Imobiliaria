@@ -385,6 +385,11 @@ select {
         margin-bottom: 0.5em;
     }
 
+    #main-apartment h3 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
     .apartment img {
         width: 100%;
         margin: 2em 0;
@@ -413,7 +418,11 @@ select {
     }
 
     /*Footer*/
-    #footer p{
+    #footer p:first-child{
         font-size: 1.5em;
+    }
+    
+    #footer p{
+        font-size: 1em;
     }
 }
