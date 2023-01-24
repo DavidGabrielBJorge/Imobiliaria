@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 :root{
-    --yellow-color: #fcee09; 
-    --red-color: #ff003c;
+    --orange-color: #f89950; 
     --black-color: #050a0e;
-    --blue-color: #00f0ff;
-    --white-color: #fafafa;
+    --blue-color: #b4c4de;
+    --white-color: #e7e7e9;
 }
 
 /*Resetar css*/
 *{
-    font-family: Tomorrow, sans-serif;
+    font-family: Noto Sans, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,14 +17,14 @@
 
 /*Estilizando o body*/
 body {
-    background-color: var(--yellow-color);
+    background-color: var(--orange-color);
     margin: 0px;
-    font-family: Tomorrow, sans-serif;
+    font-family: Noto Sans, sans-serif;
 }
 
 /*Estlizado o header*/
 #site-description{
-    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url("./img/Cyberpunk_foto1.jpg");/*Deixa a imagem mais escura*/
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url("./img/Main_Photo.jpg");/*Deixa a imagem mais escura*/
     background-position: center;
     background-size: cover;
     height: 85vh;
@@ -36,14 +35,14 @@ body {
 }
 
 #site-title h2{
-    color: var(--yellow-color);
+    color: var(--orange-color);
     margin-bottom: 1em;
 }
 
 #site-title h2 {
     font-size: 3em;
     margin-bottom: 0.2em;
-    color: var(--yellow-color);
+    color: var(--orange-color);
 }
 
 #site-title .description {
@@ -52,7 +51,7 @@ body {
     max-width: 350px;
     font-weight: bold;
     margin-bottom: 1em;
-    color: var(--yellow-color);
+    color: var(--orange-color);
   }
 
 #site-title p{
@@ -103,7 +102,7 @@ select {
  }
 
 .btn{
-    background-color: var(--yellow-color);
+    background-color: var(--orange-color);
     color: var(--black-color);
     text-transform: uppercase;
     width: 100%;
@@ -120,8 +119,8 @@ select {
 
 /*Parallax*/
 #experience h2 {
-    background-image: url("./img/Cyberpunk_foto6.png");
-    min-height: 30%; 
+    background-image: url("./img/Parallax_Photo.jpg");
+    min-height: 300px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +128,7 @@ select {
     text-align: center;
     padding: 2em;
     font-weight: 1000;
-    color: var(--yellow-color);
+    color: var(--orange-color);
 }
 
 /*Exemplos*/
@@ -160,27 +159,27 @@ select {
 }
   
 #example-1 {
-    background-image: url("./img/Cyberpunk_2077_exemplo_2.jpg");
+    background-image: url("./img/Foto_Edificio_1.jpg");
 }
 
 #example-2 {
-    background-image: url("./img/Cyberpunk_2077_exemplo_4.png");
+    background-image: url("./img/Foto_Edificio_2.jpg");
 }
 
 #example-3 {
-    background-image: url("./img/Cyberpunk_2077_exemplo_3.png");
+    background-image: url("./img/Foto_Edificio_3.jpg");
 }
 
 /*Local do escritório*/
 #local {
     height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/nc_map2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/Foto_Escritorio.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: var(--yellow-color);
+    color: var(--orange-color);
     margin-bottom: 3em;
 }
 
@@ -272,7 +271,7 @@ select {
 #footer {
     text-align: center;
     color: var(--black-color);
-    height: 200px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,10 +287,44 @@ select {
     font-weight: bold;
 }
 
+.footer-box{
+    display: flex;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border: 1px solid;
+    font-size: 1em;
+    border-radius: 5px;
+    
+}
+
+table{
+    background-color: var(--black-color);
+}
+
+th{
+    background-color: var(--orange-color);
+}
+
+td{
+    background-color: var(--blue-color);
+    margin-bottom: 0.2em;
+}
+
+  
+
 /*Secao da inspiracao*/
 #inspiration {
     height: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/Cyberpunk_2077_exemplo_7.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/Foto_Cidade_Amanhecer.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
