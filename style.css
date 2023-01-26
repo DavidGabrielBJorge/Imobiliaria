@@ -196,12 +196,13 @@ select {
 #address i {
   color: var(--blue-color);
   font-size: 5em;
-  margin-right: 0.5em;
+
 }
 
 #details-local {
   text-align: center;
-  font-size: 1.5em;
+  align-items: center;
+  font-size: 1.0em;
 }
 
 #about-local h3 {
@@ -212,7 +213,7 @@ select {
 }
 
 #about-local p {
-  line-height: 0.5em;
+  width: 500px;
 }
 
 /*Apartamentos*/
@@ -238,7 +239,7 @@ select {
 .apartment h3 {
     margin-bottom: 1em;
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 600;
 }
   
 #main-apartment h3 {
